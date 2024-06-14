@@ -1,0 +1,161 @@
+body{
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #615c5c;
+    display:flex;
+    flex-direction: column;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    flex: grow 1;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+.sidebar ul li:last-child a {
+    border-bottom: none; 
+}
+
+/* Styling content */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling landing section */
+.landing {
+    text-align: center;
+    
+}
+
+.landing h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.landing h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Styling contact links */
+#contact img {
+    width: 30px;
+    margin-right: 10px;
+}
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .column {
+    flex: 1;
+    padding: 0 10px;
+  }
+  
+  .skill {
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+  }
+  
+  .skill-bar {
+    height: 20px;
+    background-color: #424040;
+  }
+  
+  section {
+    margin-bottom: 40px;
+}
+.skill-bar-fill {
+    height: 100%;
+    background-color: #7c5576; /* Change color as needed */
+    animation: fillAnimation 2s ease-in-out;
+  }
+  
+  @keyframes fillAnimation {
+    from { width: 0; }
+  }
+  
+  button{
+    border-radius: 25%;
+    color: #464444;
+    
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.certificate-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 200px; /* Adjust the width as needed */
+    text-align: center;
+}
+
+.certificate-box h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.certificate-box img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.certificate-box p {
+    font-size: 0.9em;
+    color: #555;
+}
